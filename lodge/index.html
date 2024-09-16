@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./product/product.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="./home.js" defer></script>
+    <script src="./product/product.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- header section  --> 
+
+    <header class="header">
+      <div class="linesDiv">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-items">
+          <div class="nav-logoDiv">
+            <img
+              class="nav-logo"
+              src="./images/jewelry_PNG6770 copy.png"
+              alt=""
+            />
+            <img class="nav-para" src="./images/Lodge.png" alt="" />
+          </div>
+
+          <div class="nav-links">
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/product/product.html">shop</a></li>
+            <li><a href="/cart/cart.html">cart</a></li>
+
+            <div class="dropdown">
+              <button class="dropbtn" onclick="showDropdown()">
+                CATEGORIES
+                <i class="fa fa-caret-down"></i>
+              </button>
+
+              <div class="dropdown-content" id="myDropdown"></div>
+            </div>
+          </div>
+
+          <div>
+            <li>
+              <img
+                class="shopping-cartImg"
+                id="shopping-cartImg"
+                src="./images/shopping-cart.png"
+                alt="shopping-cart"
+                onclick="openSlider()"
+              />
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+
+      <div class="shopping-cartImgDivMain">
+        <img class="shopping-cartImgMain" src="./images/shopping-cart.png" alt=""  onclick="openSlider()" >
+      </div>
+
+
+
+      <!-- cart slider -->
+      <section class="cartSlider-section" id="cart-slider">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSlider()"
+          >&times;</a
+        >
+        <h2>Cart</h2>
+        <div class="empty-cart" id="empty-cart"></div>
+
+        <div id="cart-productMain" class="cart-productMain"></div>
+
+        <div class="sub-total" id="sub-total"></div>
+        <div class="edit-product"><button onclick="window.location.href='/cart/cart.html'">Edit Cart</button></div>
+
+      </section>
+
+      <!-- banner section  -->
+      <section class="banner-section">
+        <div class="banner-content">
+          <div class="new-collectionDiv">
+            <h3 class="new-collection">New Collection</h3>
+            <div class="new-collection-line"></div>
+          </div>
+
+          <h1 class="banner-heading">jwellery</h1>
+
+          <p class="banner-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            quibusdam sequi cupiditate mollitia a illo, est eos! Facere,
+            laboriosam inventore.
+          </p>
+
+          <div class="banner-btn">
+            <button onclick="window.location.href='/product/product.html'">Shop Now</button>
+            <p>01</p>
+          </div>
+        </div>
+
+        <div class="banner-imgDiv">
+          <div class="banner-bgImg">
+            <img class="front-img" src="./images/Shape 1 copy.png" alt="" />
+            <img class="back-img" src="./images/Shape 1.png" alt="" />
+          </div>
+
+          <div class="banner-frontImgDiv">
+            <img
+              class="banner-ring"
+              src="./images/jewelry_PNG6770.png"
+              alt=""
+            />
+
+            <div class="sider">
+              <p>01</p>
+              <div class="line-div"></div>
+              <p>j</p>
+              <p>w</p>
+              <p>e</p>
+              <p>l</p>
+              <p>l</p>
+              <p>e</p>
+              <p>r</p>
+              <p>y</p>
+              <div class="line-div"></div>
+              <p>01</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-ellipse-01">
+          <img src="./images/Ellipse 5.png" alt="" />
+        </div>
+      </section>
+
+      <!-- category section -->
+      <section class="category-section">
+        <div class="category-div" id="category-div"></div>
+      </section>
+
+      <!-- about section  -->
+      <section class="about-section">
+        <div class="about-info">
+          <div class="about-infoDiv">
+            <div class="about-headingDiv">
+              <h3>About Jwellery Shop</h3>
+              <img src="./images/Rectangle 29.png" alt="" />
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              minima itaque ab totam vitae fuga animi expedita vero enim
+              corrupti perferendis repellat, quas quia. Dolor voluptate
+              asperiores soluta mollitia officia sint odit sunt, impedit
+              explicabo laborum, dicta maiores vitae delectus!
+            </p>
+
+            <button>Read More</button>
+          </div>
+
+          <div class="about-img">
+            <img src="./images/gold-bangles-500x500.png" alt="" />
+          </div>
+        </div>
+
+        <div class="about-ellipse">
+          <img src="./images/Ellipse 5 copy 3.png" alt="" />
+        </div>
+      </section>
+
+      <!-- special section -->
+      <section class="special-section">
+        <div class="ellipse-div">
+          <img src="./images/Ellipse 5 copy 2.png" alt="" />
+        </div>
+
+        <div class="special-div">
+          <div class="info">
+            <h2>special</h2>
+            <h3>wedding ring</h3>
+            <button onclick="window.location.href='/product/product.html'">Buy Now</button>
+          </div>
+
+          <div class="img-div">
+            <img src="./images/Layer 16.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial section  -->
+      <section class="testimonial-section">
+        <div class="testimonial-div">
+          <h2>testimonial</h2>
+          <img src="./images/Rectangle 29.png" alt="" />
+        </div>
+
+        <div class="para-div">
+          <p>What is says our customer</p>
+        </div>
+
+        <div class="feedback-div">
+          <img src="./images/-1.png" alt="" />
+
+          <div class="testimonial-feedback">
+            <div class="testimonial-imgDiv">
+              <img src="./images/Layer 17.png" alt="" />
+            </div>
+
+            <div class="testimonial-intro">
+              <p>Aliqua</p>
+              <span class="testimonial-span">Consectetur adipiscing</span>
+            </div>
+
+            <div class="testimonial-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate amet maiores architecto odit distinctio quas corrupti
+                minima, aperiam dolores accusamus.
+              </p>
+            </div>
+          </div>
+
+          <img src="./images/.png" alt="" />
+        </div>
+      </section>
+
+      <!-- contact section  -->
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-div">
+          <div class="form-div">
+            <form>
+              <input id="name" name="name" type="text" placeholder="Name" />
+              <input id="email" name="email" type="email" placeholder="Email" />
+              <input id="phone" name="phone" type="tel" placeholder="Phone" />
+              <textarea id="message" name="message" name="" id="" placeholder="Message"></textarea>
+              <button class="form-btn">send</button>
+            </form>
+          </div>
+
+          <div class="map-div">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.15828003818!2d67.05781667487977!3d24.85844314533922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f61f7ff7ffb%3A0x4a327d1cb63b0875!2sSolCoders!5e0!3m2!1sen!2s!4v1725952156791!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div>
+            <img class="contact-ellipse" src="./images/Ellipse 5 copy 3.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="first-section">
+        <div class="lodge-div">
+          <img
+            class="jwellery-img-footer"
+            src="./images/jewelry_PNG6770 copy.png"
+            alt=""
+          />
+          <img src="./images/Lodge.png" alt="" />
+        </div>
+
+        <div>
+          <img src="./images/location.png" alt="" />
+          <p>Address</p>
+        </div>
+
+        <div>
+          <img src="./images//phone.png" alt="" />
+          <p>+92 8827732 38237</p>
+        </div>
+        <div>
+          <img src="./images/mail.png" alt="" />
+          <p>demo@gmail.com</p>
+        </div>
+      </section>
+
+      <section class="second-section">
+        <div class="second-sectionDiv">
+          <h4>newsletter</h4>
+          <div></div>
+          <label for="email">Enter Your Email</label>
+          <input type="email" name="email" placeholder="john@gmail.com" />
+          <button>subscribe</button>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <div class="third-sectionDiv1">
+          <h5>follow us</h5>
+          <div></div>
+        </div>
+
+        <div class="icon-div">
+          <img src="./images/fb.png" alt="" />
+          <img src="./images/insta.png" alt="" />
+          <img src="./images/linkedin.png" alt="" />
+          <img src="./images/insta.png" alt="" />
+        </div>
+
+        <hr />
+
+        <div>
+          <p>Copyright 2019 All Rights Reserved By Free html Templates</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
